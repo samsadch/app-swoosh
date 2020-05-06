@@ -9,7 +9,7 @@
 import Foundation
 
 public struct Player {
-    var desiredLeage:String?
+    var desiredLeage:String!
     var selectedSkillLevel:String?
 }
 

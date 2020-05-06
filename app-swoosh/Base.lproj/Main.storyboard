@@ -278,6 +278,9 @@
                                 <state key="normal" title="FINISH">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="6Su-iv-Swc" kind="unwind" unwindAction="unwindFromLeageVCWithUnwindSegue:" id="Bq4-TO-eDO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -295,8 +298,12 @@
                         <viewLayoutGuide key="safeArea" id="16s-fN-135"/>
                     </view>
                     <navigationItem key="navigationItem" id="L7F-KB-wKF"/>
+                    <connections>
+                        <outlet property="iamLabel" destination="s0I-tZ-2bK" id="Mf4-mm-W2h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2y2-jv-BBL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="6Su-iv-Swc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1556" y="121.18226600985223"/>
         </scene>

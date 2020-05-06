@@ -38,7 +38,7 @@ class LeagueViewController: UIViewController {
     
     func selectLeage(leageType:String){
         player.desiredLeage = leageType
-        enableNextButton()
+        enableNextButton(flag: true)
     }
     
     func enableNextButton(flag:Bool)  {
@@ -47,6 +47,18 @@ class LeagueViewController: UIViewController {
         }else{
             nextBtn.isEnabled = false
         }
+    }
+    
+    
+    //prepareForSegue is always called before ViewDudLoad(on the destination iewController)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let skillVC = segue.destination as? SkillViewController{
+            skillVC.player = player
+        }
+    }
+    
+    @IBAction func unwindFromLeageVC(unwindSegue:UIStoryboardSegue){
+           
     }
     
     /*
