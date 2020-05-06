@@ -16,6 +16,7 @@
 		0509684024614EFB00664AB5 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0509683F24614EFA00664AB5 /* BorderButton.swift */; };
 		05096844246300AA00664AB5 /* LeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05096843246300AA00664AB5 /* LeagueViewController.swift */; };
 		05096846246300BB00664AB5 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05096845246300BB00664AB5 /* SkillViewController.swift */; };
+		0509684A24631B6500664AB5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0509684924631B6500664AB5 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0509683F24614EFA00664AB5 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		05096843246300AA00664AB5 /* LeagueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewController.swift; sourceTree = "<group>"; };
 		05096845246300BB00664AB5 /* SkillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
+		0509684924631B6500664AB5 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		050968422462FDF200664AB5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0509684924631B6500664AB5 /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				0509682B2461434800664AB5 /* AppDelegate.swift in Sources */,
 				0509682D2461434800664AB5 /* SceneDelegate.swift in Sources */,
 				05096844246300AA00664AB5 /* LeagueViewController.swift in Sources */,
+				0509684A24631B6500664AB5 /* Player.swift in Sources */,
 				05096846246300BB00664AB5 /* SkillViewController.swift in Sources */,
 				0509684024614EFB00664AB5 /* BorderButton.swift in Sources */,
 			);
