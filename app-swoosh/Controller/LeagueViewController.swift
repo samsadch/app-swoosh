@@ -16,7 +16,10 @@ class LeagueViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func onNextPressed(_ sender: Any) {
+        performSegue(withIdentifier: "skillVCSegue", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 

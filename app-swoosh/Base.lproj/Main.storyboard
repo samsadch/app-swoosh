@@ -81,10 +81,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="bgImg" destination="J5R-vC-AAt" id="8MM-fx-VFV"/>
-                        <outlet property="swoosh" destination="XPA-Tq-2rG" id="GDm-AR-kRG"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,6 +170,9 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextPressed:" destination="XYU-eN-Q5l" eventType="touchUpInside" id="sTZ-6f-rgg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -197,6 +196,9 @@
                         <viewLayoutGuide key="safeArea" id="D8g-7p-EyR"/>
                     </view>
                     <navigationItem key="navigationItem" id="dSm-gk-hk1"/>
+                    <connections>
+                        <segue destination="oxc-UL-aDX" kind="show" identifier="skillVCSegue" id="rof-b7-cDP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcq-ff-oev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="zim-T1-keK" userLabel="Exit" sceneMemberID="exit"/>
@@ -242,14 +244,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="nnp-Ty-iL9">
-                                <rect key="frame" x="116" y="53.999999999999993" width="119" height="91.333333333333314"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="nnp-Ty-iL9">
+                                <rect key="frame" x="20" y="53.999999999999993" width="335" height="91.333333333333314"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="wgp-V8-hV8">
-                                        <rect key="frame" x="0.0" y="0.0" width="119" height="20"/>
+                                        <rect key="frame" x="108" y="0.0" width="119" height="20"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'am a" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLP-wY-WhI">
-                                        <rect key="frame" x="32.333333333333343" y="64" width="54.666666666666657" height="27.333333333333329"/>
+                                        <rect key="frame" x="140.33333333333334" y="64" width="54.666666666666657" height="27.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -276,10 +278,13 @@
                             <constraint firstItem="16s-fN-135" firstAttribute="trailing" secondItem="xIs-tx-U8k" secondAttribute="trailing" constant="16" id="OtY-US-JQ3"/>
                             <constraint firstItem="16s-fN-135" firstAttribute="bottom" secondItem="2ws-hR-1u1" secondAttribute="bottom" id="TxX-2T-N9Y"/>
                             <constraint firstItem="2ws-hR-1u1" firstAttribute="leading" secondItem="16s-fN-135" secondAttribute="leading" constant="16" id="ped-EQ-4W0"/>
+                            <constraint firstItem="nnp-Ty-iL9" firstAttribute="leading" secondItem="16s-fN-135" secondAttribute="leading" constant="20" id="rIi-G1-uYq"/>
                             <constraint firstItem="xIs-tx-U8k" firstAttribute="top" secondItem="YLP-wY-WhI" secondAttribute="top" constant="50" id="s0I-tZ-2bK"/>
+                            <constraint firstItem="16s-fN-135" firstAttribute="trailing" secondItem="nnp-Ty-iL9" secondAttribute="trailing" constant="20" id="vuj-Co-7Mz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="16s-fN-135"/>
                     </view>
+                    <navigationItem key="navigationItem" id="L7F-KB-wKF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2y2-jv-BBL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
